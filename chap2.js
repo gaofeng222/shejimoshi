@@ -51,9 +51,34 @@ console.log(b.isJSBook)
 console.log(b.id)
 console.log(b.isChinese)
 
+//闭包的实现
+var Book3 = (function(){
+    var bookNum = 0;
+    function checkBook(name){};
 
+    return function(newId,newName,newPrice){
+        var name,price;
+        function checkID(id){};
+        this.getName = function(){};
+        this.getPrice = function(){};
+        this.setName = function(){};
+        this.setPrice = function(){}
 
+        this.id = newId;
+        this.copy = function(){};
+        bookNum++;
+        if(bookNum > 100){
+            throw new Error("我们近出版100本书");
+        }
+        this.setName(name);
+        this.setPrice(price)
+    }
+})()
 
+Book3.prototype = {
+    isJSBook : false,
+    display : function(){}
+}
 
 
 
