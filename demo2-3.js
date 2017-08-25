@@ -47,6 +47,8 @@ console.log(instance1.books)
 
 instance1.books.push("shejimoshi");
 console.log(instance2.books)
+console.log("----------------")
+console.log(instance1 == instance2 )
 
 //构造函数继承
 
@@ -69,11 +71,21 @@ instance3.books.push("设计模式");
 console.log(instance3.books)
 console.log(instance4.books)
 
+//组合式继承
 
+function SuperClasses(name){
+    this.name = name;
+    this.books = ["html","css","javascript"];
+}
 
+SuperClasses.prototype.getName = function(){
+    console.log(this.name);
+}
 
-
-
+function SubClasses(name,time){
+    SuperClasses.call(this,name);
+    this.time = time;
+}
 
 
 
