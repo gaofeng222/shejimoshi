@@ -108,9 +108,21 @@ var Book = (function(){
     return _book;
 })()
 
+//创建对象的安全模式
 
+var Book = function(title,time,type){
+    if(this instanceof Book){
+        this.title = title;
+        this.time = time;
+        this.type = type;
+    }else{
+        return new Book(title,time,type)
+    }
+}
 
-
+var book = Book("Javascript","2012",'JS');
+console.log(book.title)
+console.log(book)
 
 
 
