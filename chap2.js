@@ -80,7 +80,33 @@ Book3.prototype = {
     display : function(){}
 }
 
+//在闭包外部添加原型属性和方法看上去想似脱离了闭包这个类,所以有时在闭包内部实现一个完整的类,然后再将其返回
 
+var Book = (function(){
+    var booknum = 0;
+    function checkBook(name){};
+    function _book(newId,newName,newPrice){
+        var name,price;
+        function checkID(id){};
+        this.getName = function(){};
+        this.getPrice = function(){};
+        this.setPrice = function(){};
+        this.setName = function(){}
+        this.id = newId;
+        this.copy = function(){};
+        booknum++;
+        if(booknum > 100){
+            throw new Error("我们仅出版100本书");
+            this.setName(name);
+            this.setPrice(price);
+        }
+    }
+    _book.prototype = {
+        isJSBook : false,
+        display : function(){}
+    }
+    return _book;
+})()
 
 
 
