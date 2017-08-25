@@ -48,14 +48,26 @@ console.log(instance1.books)
 instance1.books.push("shejimoshi");
 console.log(instance2.books)
 
+//构造函数继承
 
+function SuperClass2(id){
+    this.books= [ 'Javascript','html','css' ];
+    this.id = id;
+}
+SuperClass2.prototype.showBooks = function(){
+    console.log(this.books)
+}
 
+function SubClass2(id){
+    SuperClass2.call(this,id)
+}
 
+var instance3 = new SubClass2(20)
+var instance4 = new SubClass2(10)
 
-
-
-
-
+instance3.books.push("设计模式");
+console.log(instance3.books)
+console.log(instance4.books)
 
 
 
