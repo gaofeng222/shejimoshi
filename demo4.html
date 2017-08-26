@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <title>工厂方法模式</title>
     <script src="demo4.js"></script>
+    <script>
+        window.onload = function(){
+            /*new Java("This is a java's world")
+            new Php("This is a php's world")
+            new Javascript("This is a javascript's world")*/
+            //简单工厂模式
+
+            Factory("php","This is a php's world")
+            Factory("Java","This is a java's world")
+            Factory("Javascript","This is a Javascript's world")
+            Factory("ui","This is a ui's world")
+        }
+    </script>
 </head>
 <body>
     <div id="container"></div>
