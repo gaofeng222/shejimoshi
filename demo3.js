@@ -3,7 +3,7 @@
  */
 
 
-//简单工厂模式
+//一般的写法
 var LoginAlert = function(text){
     this.content = text;
 }
@@ -12,10 +12,11 @@ LoginAlert.prototype.show = function(){
 }
 
 var userNmaeAlert = new LoginAlert("Hello world")
-userNmaeAlert.show()
+userNmaeAlert.show() //This is a alert Hello world
 
 
-
+var passwordAlert = new LoginAlert("输入的密码不正确");
+passwordAlert.show()
 
 
 
