@@ -92,3 +92,28 @@ var book2 = createBook("css book",2016)
 
 book1.getName()
 book2.getName()
+
+
+function createPop(type,context){
+    var o = new Object();
+    o.content = context;
+    o.show = function(){
+        console.log("这是共同的内容")
+    }
+    if(type == "alert"){
+        o.show()
+        console.log("差异部分的操作")
+    }
+    if(type == "prompt"){
+        o.show()
+        console.log("差异部分的操作")
+    }
+    if(type == "confirm"){
+        o.show()
+        console.log("差异部分的操作")
+    }
+}
+
+
+var userAlert = createPop("alert","用户名只能是16个")
+
