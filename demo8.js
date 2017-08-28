@@ -26,6 +26,8 @@ function html(id,value){
 
 //使用命名空间
 
+//单例模式管理静态变量
+
 var A = {
     get : function(id){
         return document.getElementById(id)
@@ -34,8 +36,6 @@ var A = {
         this.g(id).style[key] = value;
     }
 }
-
-//单例模式管理静态变量
 
 var Conf = (function(){
     var conf = {
