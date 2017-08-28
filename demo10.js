@@ -93,13 +93,3 @@ function arrrToObjectAdapter(arr){
 
 var adapterData = arrToObjectAdapter(arr);
 console.log( adapterData )
-
-
-
-
-
-
-
-
-
-
