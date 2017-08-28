@@ -45,7 +45,7 @@ var getEvent = function(e){
  var target = function(event){
      var event = getEvent(event);
      //标准浏览器下返回event.target,IE下面event.srcElement
-     return event.target || event.
+     return event.target || event.srcElement
  }
 
 
