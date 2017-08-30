@@ -125,36 +125,3 @@ Spirite.prototype.init = function(){
 
 var p = new People(10,12,16);
 p.init()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
