@@ -197,20 +197,3 @@ news.add( new Item('normal').add( new IconNews('哈哈哈哈哈','#','video' )))
         new TypeNews('叽叽叽叽叽叽','#','CBA','right')
     )
 ).show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
