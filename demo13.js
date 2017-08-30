@@ -100,13 +100,13 @@ Ball.prototype.init = function(){
 }
 
 function People(x,y,f){
-    this.spedd = new Speed(x,y);
+    this.speed = new Speed(x,y);
     this.font = new Speek(f);
 }
 
 People.prototype.init = function(){
     this.speed.run();
-    this.speed.say();
+    this.font.say();
 }
 
 
